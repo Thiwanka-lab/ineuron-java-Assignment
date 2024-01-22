@@ -1,0 +1,194 @@
+
+1) Assignment
+
+package Assignment;
+
+public class PrintINEU {
+
+    public static void main (String [] args){
+        int n = 8;
+
+        for (int i=0; i<n; i++){
+
+            for (int j =0; j<n; j++){
+
+                if (j == (n - 1)/2 || i == 0 ||  i == (n - 1)  ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 ||  j == (n - 1) || i==j  ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 ||  i == (n - 1)/2 || i==0 || i==(n-1)  ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 && i!=(n-1) ||  i == (n - 1) && j!=0 && j!=(n-1)  || j==(n-1)&& i!=(n-1) ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 && i!=(n-1) && i!=0 ||  i == (n - 1)  && j==0 || j==(n-1) && i!=0 && i<=(n-1)/2 && i!=(n-1)/2 || i==0 && j!=0 && j!=(n-1) || i==(n-1)/2 && j!=(n-1) || i-j==(n-1)/2) {
+                    System.out.print("*");
+
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 && i!=(n-1) && i!=0 ||  i == (n - 1) && j!=0 && j!=(n-1)  || j==(n-1)&& i!=(n-1) && i!=0 || i==0 && j!=0 && j!=(n-1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("   ");
+            for (int j =0; j<n; j++){
+
+                if (j == 0 ||  j == (n - 1) || i==j  ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+
+            System.out.println();
+        }
+    }
+
+}
+
+2) Assignment
+
+
+package Assignment;
+
+public class PrintNUM {
+
+    public static void main (String [] args){
+
+        int n = 4;
+        int k = 1;
+
+        for (int i=0; i<n; i++){
+           for(int j=0; j<n; j++) {
+
+               System.out.print(k);
+           }
+            k++;
+            System.out.println();
+        }
+
+
+    }
+
+}
+
+
+
+3) Assignment
+
+package Assignment;
+
+public class ComplexPattern1 {
+
+    public static void main (String [] args){
+        int n = 14;
+
+        for (int i=0; i<n; i++){
+
+            for (int j =0; j<n; j++){
+
+                if (j==0  || i==0 || j==(n-1) || i==(n-1) || (i+j)<=(n-1)/2 || (j-i)>=(n-1)/2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+
+                }
+            }
+            System.out.println();
+        }
+    }
+
+}
+
+
+4) Assignment
+
+package Assignment;
+
+public class ComplexPattern2 {
+
+    public static void main (String [] args){
+        int n = 14;
+
+        for (int i=0; i<n; i++){
+
+            for (int j =0; j<n; j++){
+
+                if (j==0 && i>=(n-1)/2 || j==(n-1) && i>=(n-1)/2 || (i-j)>=(n-1)/2 || (i+j)>= (n-1)+(n-1)/2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+5) Assignment
+
+package Assignment;
+
+public class ComplexPattern3 {
+    public static void main(String[] args) {
+        int n = 14;
+
+        for (int i = 0; i < n; i++) {
+
+            for (int j = 0; j < n; j++) {
+
+                if (j == 0 || i == 0 ||  i == (n - 1) || (i + j) <= (n - 1) / 2 || (i-j)>=(n-1)/2 ) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
